@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BANVEMAYBAYModelStoreContainer" CdmEntityContainer="BANVEMAYBAYEntities">
+    <EntitySetMapping Name="cities">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.city">
+        <MappingFragment StoreEntitySet="city">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="countryId" ColumnName="countryId" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="cityId" ColumnName="cityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="countries">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.country">
+        <MappingFragment StoreEntitySet="country">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="countryName" ColumnName="countryName" />
+          <ScalarProperty Name="countryId" ColumnName="countryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menus">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.menu">
+        <MappingFragment StoreEntitySet="menu">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="orders" ColumnName="orders" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="tableid" ColumnName="tableid" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.order">
+        <MappingFragment StoreEntitySet="order">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created_ate" ColumnName="created_ate" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mess" ColumnName="mess" />
+          <ScalarProperty Name="quoctich" ColumnName="quoctich" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="CusId" ColumnName="CusId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="guestTotal" ColumnName="guestTotal" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ordersdetails">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.ordersdetail">
+        <MappingFragment StoreEntitySet="ordersdetail">
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="posts">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.post">
+        <MappingFragment StoreEntitySet="post">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="slug" ColumnName="slug" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="topid" ColumnName="topid" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="GropID" ColumnName="GropID" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="accessName" ColumnName="accessName" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tickets">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.ticket">
+        <MappingFragment StoreEntitySet="ticket">
+          <ScalarProperty Name="toAirport" ColumnName="toAirport" />
+          <ScalarProperty Name="fromAirport" ColumnName="fromAirport" />
+          <ScalarProperty Name="arrival_time" ColumnName="arrival_time" />
+          <ScalarProperty Name="departure_time" ColumnName="departure_time" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="Sold" ColumnName="Sold" />
+          <ScalarProperty Name="priceSale" ColumnName="priceSale" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="guestTotal" ColumnName="guestTotal" />
+          <ScalarProperty Name="departure_date" ColumnName="departure_date" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="ticketType" ColumnName="ticketType" />
+          <ScalarProperty Name="airline" ColumnName="airline" />
+          <ScalarProperty Name="flightCode" ColumnName="flightCode" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="topics">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.topic">
+        <MappingFragment StoreEntitySet="topic">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="orders" ColumnName="orders" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="slug" ColumnName="slug" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="BANVEMAYBAYModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
